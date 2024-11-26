@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+    <title>Página institucional</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Doe para o próximo</h1>
+        <div class="inputSearch">
+          <input type="search" placeholder="Buscar" />
+        </div>
+        <img src="./assets/Senac_logo.svg.png" alt="logo do senac" style="height: 30px;"/>
+      </header>
+      <main>
+        <div id="banner">
+          <img src="./assets/banner.jpg" alt="" id="bannerImg"/>
+        </div>
+        <div class="sectionArticle">
+          <section>
+            <h2>Mensagem de Natal - Senac: O Espírito da Solidariedade</h1>
+            <p>
+              Neste Natal, o Senac convida a todos a refletirem sobre o
+              verdadeiro significado desta data tão especial. Mais do que
+              presentes, luzes e comemorações, o Natal nos lembra da importância
+              da solidariedade e do apoio mútuo. Como instituição comprometida
+              com o desenvolvimento e a transformação social, o Senac acredita
+              que pequenas ações podem fazer grandes diferenças na vida das
+              pessoas. Por isso, durante este período festivo, incentivamos
+              todos a se unirem em gestos de doação, que levam esperança,
+              carinho e dignidade para quem mais precisa. Que o espírito de
+              generosidade e cuidado se espalhe em nossa comunidade, e que o
+              próximo ano seja repleto de novos aprendizados, conquistas e
+              solidariedade. Aos nossos alunos, colaboradores e parceiros,
+              desejamos um Natal repleto de paz, amor e união. Que, juntos,
+              possamos continuar a construir um futuro mais justo e acolhedor
+              para todos. Feliz Natal e um próspero Ano Novo!
+            </p>
+            <article>
+              <h2>Como chegar ao Senac?</h2>
+              <p>
+                Acesse o site oficial do Senac: https://www.senac.br/ para obter
+                mais informações.
+              </p>
+              <img src="./img/mapa.png" alt="" />
+            </article>
+          </section>
+        </div>
+        <div class="formularioArea">
+          <form id="formulario">
+            <h3>Preencha os dados e o tipo de brinquedo que você irá doar</h3>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios"></textarea>
+            <label for="tipobrinquedo">Tipobrinquedo:</label>
+            <input
+              type="text"
+              id="tipobrinquedo"
+              name="tipobrinquedo"
+              required
+            />
+            <label for="genero">Genero:</label>
+            <select id="genero" name="genero">
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+            </select>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required />
+            <button type="submit" id="botaoEnviar">Enviar</button>
+          </form>
+          <div class="papaiNoelContainer">
+          <img src="./assets/papaiNoel.jpg" alt=""
+          id="papaiNoelImg" style="width: 100%;cursor: pointer;">
+        </div>
+        </div>
+      </main>
+      <footer>
+        <p>Todos os direitos reservados &copy; a Bruno Pires Oliveira, Gustavo Onório da Silva e Vinicius</p>
+      </footer>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
