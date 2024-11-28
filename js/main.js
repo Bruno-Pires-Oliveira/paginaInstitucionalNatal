@@ -8,12 +8,11 @@ document
   .getElementById("papaiNoelImg")
   .addEventListener("click", santaClausLaughingOnClick);
 document.addEventListener("DOMContentLoaded", jingleBells);
+
 /**
  * Função que cadastra um usuário no sistema.
  * @param {Event} e - Evento que ocorre quando o formulário é submetido.
  */
-
-/* Aqui é necessário fazer a função de cadastrar o usuario */
 function cadastrarUsuario(e) {
   e.preventDefault();
   const nome = document.getElementById("nome").value;
@@ -33,7 +32,6 @@ function cadastrarUsuario(e) {
   ) {
     alert("Preencha todos os campos");
     return sadNoel();
-   
   } else {
     dataUser.cadastrarUsuario(
       nome,
@@ -48,6 +46,9 @@ function cadastrarUsuario(e) {
   }
 }
 
+/**
+ * Função que executa o som de riso do Papai Noel ao enviar.
+ */
 function santaClausLaughingOnSend() {
   const audio = document.createElement("audio");
   const papaiNoelImg = document.getElementById("papaiNoelImg");
@@ -56,12 +57,20 @@ function santaClausLaughingOnSend() {
   document.body.appendChild(audio);
   audio.play();
 }
+
+/**
+ * Função que executa o som de riso do Papai Noel ao clicar.
+ */
 function santaClausLaughingOnClick() {
   const audio = document.createElement("audio");
   audio.src = "./audio/santaClaus.mp3";
   document.body.appendChild(audio);
   audio.play();
 }
+
+/**
+ * Função que executa o som de tristeza do Papai Noel e altera a imagem.
+ */
 function sadNoel() {
   const audio = document.createElement("audio");
   audio.src = "./audio/clash-royale-king-cry.mp3";
@@ -72,6 +81,9 @@ function sadNoel() {
     "./assets/papaiTristePorqueVoceEBurroEerrouOformulario.jpg";
 }
 
+/**
+ * Função que executa a música Jingle Bells com volume reduzido.
+ */
 function jingleBells() {
   const audio = document.createElement("audio");
   audio.src = "./audio/jingle-bells-180104.mp3";
@@ -79,3 +91,4 @@ function jingleBells() {
   audio.play();
   audio.volume = 0.1;
 }
+
