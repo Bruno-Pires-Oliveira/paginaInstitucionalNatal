@@ -142,7 +142,6 @@ main p{
 }
 #bannerImg{
     width: 100%;
-    overflow: hidden;
     object-fit: cover;
     height: 500px;
 }
@@ -171,22 +170,20 @@ article{
     align-items: center;
     margin-top: 80px;
     margin-bottom: 30px;
-    padding: 15px;
+    border-radius: 20px;
     text-align: justify;
-    background-color: var(--branco-neve);
+    background-image: url('../assets/gifBackgroundImg.gif');
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 article h2{
-    font-family: var(--fonte-titulo) !important;
+    font-family: var(--font-size-padrao) !important;
     font-size: var(--font-size-titulo) !important;
-    color: var(--dourado) !important;
+    color: var(--vermelho-natalino) !important;
+    font-weight: 800;
 
 }
-article p{
-    font-family: var(--fonte-padrao) !important;
-    font-size: var(--font-size-padrao) !important;
-    color: var(--branco-neve) !important;
-   
-}
+
 #hulkNatalino{
   animation: hulkGirando;
   animation-duration: 5s;
@@ -242,6 +239,11 @@ article p{
     align-items: center;
     width: 100%;
     flex-direction: column;
+}
+legend{
+    animation: legendsAlterandoCores !important;
+    animation-duration: 9s !important;
+    animation-iteration-count: infinite !important;
 }
 form{
     width: 100%;
@@ -306,7 +308,7 @@ footer{
     justify-content: center;
     width: 100%;
     background-color: var(--vermelho-natalino);
-    height: 60px;
+    height: 80px;
     color: var(--branco-neve);
     font-size: larger;
 }
@@ -339,7 +341,6 @@ footer{
 
 }
 
-
 @keyframes modalGirando {
     0%{
         transform: rotate(0deg);
@@ -371,6 +372,34 @@ footer{
         box-shadow: var(--azul-noite) 3px 3px 10px 3px;
 
     }
+}
+@keyframes legendsAlterandoCores {
+    0%{ 
+        color: #FFA500;
+        text-shadow: 8px 8px 16px #FFA500;
+    }
+    25%{
+        color: #FFD700;
+        text-shadow: 8px 8px 16px #FFD700;
+    }
+    50%{
+        color: #800080;
+        text-shadow: 8px 8px 16px #800080;
+    }
+    75%{
+        color:  #00BFFF;
+        text-shadow: 8px 8px 16px #00BFFF;
+    }
+    90%{
+        color:  #D3D3D3;
+        text-shadow: 8px 8px 16px  #D3D3D3;
+    }
+    100%{
+        color: #FFA500;
+        text-shadow: 8px 8px 16px  #FFA500;
+    }
+    }
+    
 }
 @media (max-width: 515px) {
     #papaiNoelImg{

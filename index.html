@@ -48,7 +48,7 @@
             </p>
             <div class="iconDivs">              
               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="botaoSenacModal">
-                <legend>O que eu posso doar? (Clique no presente a seguir)</legend>
+                <legend style="font-size: 24px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">O que eu posso doar? (Clique no presente a seguir)</legend>
                 <img src="./assets/buttonTrigger1.jpg" alt="Botão dizendo sobre o senac" class="senacIcon">
               </button> 
               <!-- Modal -->
@@ -79,22 +79,52 @@
                   </div>
                 </div>
               </div>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPlaca" id="botaoSenacModal">
+                <legend style="font-size: 24px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">O que eu não  posso doar? (Clique na placa a seguir)</legend>
+                <img src="./assets/placaDeProibido.webp" alt="Icon clicavel que aparece um modal dizendo sobre oq não pode doar" class="senacIcon">
+              </button> 
+              <div class="modal fade" id="modalPlaca" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5 " id="exampleModalLabel">O que eu não posso doar?</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <div class="flex">
+                      <div class="boneco">
+                       <p class="pModal">Você não pode doar brinquedos muito quebrados!<img src="./assets/brinquedoModalPlaca.webp" alt="Brinquedo quebrado em meio a nevasca" class="imagemModal" style="border-radius: 50%;"></p>
+                      </div>
+                      <div class="roupas">
+                        <p class="pModal">Você não pode doar roupas rasgadas!<img src="./assets/roupaRasgada.webp" alt="Roupas" class="imagemModal" style="border-radius: 50%;"></p>
+                      </div>
+                      <div class="sapatos">
+                      <p class="pModal">Você não pode doar sapatos rasgados!<img src="./assets/sapatosRasgados.webp" alt="Sapatos" class="imagemModal" style="border-radius: 50%;"></p>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
          
 
             <article>
               <h2>Como chegar ao Senac?</h2>
-              <p>
-                Acesse o site oficial do Senac: <a href="https://www.senac.br">https://www.senac.br/</a> para obter
-                mais informações.
-              </p>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.20238335458!2d-48.52493692383077!3d-25.531634677497255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94db9a43ec6dfe71%3A0x958318e02dde88e6!2sSenac%20Paranagu%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1732667285017!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <a href="https://www.senac.br" target="_blank" style="display: block; font-size: 32px; font-weight: 900;">https://www.senac.br/</a>
+         
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.20238335458!2d-48.52493692383077!3d-25.531634677497255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94db9a43ec6dfe71%3A0x958318e02dde88e6!2sSenac%20Paranagu%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1732667285017!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0; width: 50%; margin-bottom: 10px;border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </article>
         </div>
         <div style="width: 100%;display: flex;flex-direction: column;align-items: center;justify-content: center;">
         <div class="formularioArea">
           <form id="formulario">
+            <h2>Formulário de Doação</h2>
             <h3>Preencha os dados e o tipo de brinquedo que você irá doar</h3>
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome"  />
