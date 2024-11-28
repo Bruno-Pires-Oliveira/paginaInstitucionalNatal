@@ -14,39 +14,8 @@ document.addEventListener("DOMContentLoaded", jingleBells);
  * @param {Event} e - Evento que ocorre quando o formulário é submetido.
  */
 
-function cadastrarUsuario(e) {
-  e.preventDefault();
-  const nome = document.getElementById("nome").value;
-  const email = document.getElementById("email").value;
-  const comentarios = document.getElementById("comentarios").value;
-  const tipobrinquedo = document.getElementById("tipobrinquedo").value;
-  const genero = document.getElementById("genero").value;
-  const telefone = Number(document.getElementById("telefone").value);
-  if (
-    nome == "" ||
-    email == "" ||
-    comentarios == "" ||
-    tipobrinquedo == "" ||
-    genero == "" ||
-    telefone == ""
-  ) {
-    alert("Preencha todos os campos");
-    return sadNoel();
-  } else {
-    dataUser.cadastrarUsuario(
-      nome,
-      email,
-      comentarios,
-      tipobrinquedo,
-      genero,
-      telefone
-    );
-    console.log(dataUser);
+/* Aqui é necessário fazer a função de cadastrar o usuario */
 
-    alert("Usuário cadastrado com sucesso!");
-    return santaClausLaughingOnSend();
-  }
-}
 function santaClausLaughingOnSend() {
   const audio = document.createElement("audio");
   const papaiNoelImg = document.getElementById("papaiNoelImg");
@@ -57,7 +26,7 @@ function santaClausLaughingOnSend() {
 }
 function santaClausLaughingOnClick() {
   const audio = document.createElement("audio");
-  audio.src = "./audio/santaClausLaughing.mp3";
+  audio.src = "./audio/santaClaus.mp3";
   document.body.appendChild(audio);
   audio.play();
 }
@@ -75,6 +44,26 @@ function jingleBells() {
   audio.src = "./audio/jingle-bells-180104.mp3";
   document.body.appendChild(audio);
   audio.play();
-
+  audio.muted = true;
   audio.volume = 0.1;
 }
+
+function cadastrarUsuario (e) {
+  e.preventDefault()
+  const nome = document.getElementById("nome").value;
+  const email = document.getElementById("email").value;
+  const comentarios = document.getElementById("comentarios").value;
+  const tipobrinquedo = document.getElementById("tipobrinquedo").value;
+  const genero = document.getElementById("genero").value;
+  const telefone = Number(document.getElementById("telefone").value)
+  
+  if(nome == "" ||   email == "" || comentarios == "" || tipobrinquedo == "" ||  genero == "" ||  telefone == "" ){
+    alert("Preencha todos os campos")
+    return sadNoel()
+  } else { dataUser.cadastrarUsuario(nome, email, comentarios, tipobrinquedo, genero, telefone)
+    alert("Dados Cadastrados")
+    return santaClausLaughingOnClick()
+  }
+
+}
+

@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <link rel="stylesheet" href="./css/style.css">
     <title>Página institucional</title>
   </head>
@@ -16,11 +17,11 @@
         <div class="inputSearch">
           <input type="search" placeholder="Buscar" />
         </div>
-        <img src="./assets/Senac_logo.svg.png" alt="logo do senac" style="height: 30px;"/>
+        <img src="./assets/logoGenerica.png" alt="logo do senac" style="height: 100px;width: 100px;"/>
       </header>
       <main>
         <div id="banner">
-          <img src="./assets/banner.jpg" alt="" id="bannerImg"/>
+          <img src="./assets/merry-christmas_poster02.png" alt="" id="bannerImg"/>
         </div>
         <div class="sectionArticle">
           <section>
@@ -41,34 +42,64 @@
               desejamos um Natal repleto de paz, amor e união. Que, juntos,
               possamos continuar a construir um futuro mais justo e acolhedor
               para todos. Feliz Natal e um próspero Ano Novo!
-              <div>              
-                <img src="./assets/hulkNatalino.png" alt="" style="height: 300px;width: 100%;border-radius: 50%;" id="hulkNatalino">
-              </div>
+             
         
            
             </p>
-            <video id="videoInsert" controls muted loop autoplay>
-              <source src="./video/DancingHulk.mp4" type="video/mp4" autoplay loop muted/>
-            </video>
+            <div class="iconDivs">              
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="botaoSenacModal">
+                <legend>O que eu posso doar? (Clique no presente a seguir)</legend>
+                <img src="./assets/buttonTrigger1.jpg" alt="Botão dizendo sobre o senac" class="senacIcon">
+              </button> 
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5 " id="exampleModalLabel">O que eu posso doar?</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <div class="flex">
+                      <div class="boneco">
+                       <p class="pModal">Você pode doar brinquedos!<img src="./assets/brinquedo.png" alt="Brinquedo do chama" class="imagemModal"></p>
+                      </div>
+                      <div class="roupas">
+                        <p class="pModal">Você pode doar roupas!<img src="./assets/roupas.png" alt="Roupas" class="imagemModal"></p>
+                      </div>
+                      <div class="sapatos">
+                      <p class="pModal">Você pode doar sapatos!<img src="./assets/sapatos.png" alt="Sapatos" class="imagemModal"></p>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
          
 
             <article>
               <h2>Como chegar ao Senac?</h2>
               <p>
-                Acesse o site oficial do Senac: https://www.senac.br/ para obter
+                Acesse o site oficial do Senac: <a href="https://www.senac.br">https://www.senac.br/</a> para obter
                 mais informações.
               </p>
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.20238335458!2d-48.52493692383077!3d-25.531634677497255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94db9a43ec6dfe71%3A0x958318e02dde88e6!2sSenac%20Paranagu%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1732667285017!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </article>
         </div>
+        <div style="width: 100%;display: flex;flex-direction: column;align-items: center;justify-content: center;">
         <div class="formularioArea">
           <form id="formulario">
             <h3>Preencha os dados e o tipo de brinquedo que você irá doar</h3>
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required />
+            <input type="text" id="nome" name="nome"  />
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
+            <input type="email" id="email" name="email"  />
             <label for="comentarios">Comentarios:</label>
             <textarea id="comentarios" name="comentarios"></textarea>
             <label for="tipobrinquedo">Tipobrinquedo:</label>
@@ -91,6 +122,7 @@
           <img src="./assets/papaiNoel.jpg" alt=""
           id="papaiNoelImg">
         </div>
+      </div>
         </div>
      
       </main>
@@ -100,5 +132,7 @@
       </footer>
     </div>
     <script type="module" src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
   </body>
 </html>

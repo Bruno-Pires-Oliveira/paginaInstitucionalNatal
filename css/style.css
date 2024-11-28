@@ -25,87 +25,86 @@
    
 }
 body{
-    background-color: var(--verde-floresta);
+    background-color: var(--verde-floresta) !important;
 }
 header{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
     gap: 10px;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--vermelho-natalino);
-    height: 60px;
-    padding-left: 80px;
-    padding-right: 80px;
+    justify-content: space-between !important;
+    align-items: center !important;
+    background-color: var(--vermelho-natalino) !important;
+    height: 60px !important;
+    padding-left: 80px !important;
+    padding-right: 80px !important;
 }
 
 header h1{
-    font-family: var(--fonte-titulo);
-    font-size: 50px;
-    color: var(--branco-neve);
+    font-family: var(--fonte-titulo) !important;
+    font-size: 50px !important;
+    color: var(--branco-neve) !important;
 
 }
 h3{
-    text-align: center;
-    font-family: var(--font-size-titulo);
-    font-size: var(--font-size-padrao);
-    color: var(--branco-neve);
-    font-weight: 800;
-    text-shadow: 3px 3px 3px var(--vermelho-natalino);
+    text-align: center !important;
+    font-family: var(--font-size-titulo) !important;
+    font-size: var(--font-size-padrao) !important;
+    color: var(--branco-neve) !important;
+    font-weight: 800 !important;
+    text-shadow: 3px 3px 3px var(--vermelho-natalino)  !important;
     
 }
 .inputSearch{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    border: 1px solid var(--vermelho-natalino);
-    border-radius: 10px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    border: 1px solid var(--vermelho-natalino) !important;
+    border-radius: 10px !important;
 }
 .inputSearch input{
-   display: flex;
-   align-items: center;
-   justify-content: center;
+   display: flex !important;
+   align-items: center !important;
+   justify-content: center !important;
 }
 input{
-    width: 300px;
-    height: 30px;
-    border: 1px solid var(--vermelho-natalino);
-    border-radius: 5px;
-    transition: 2s;
+    width: 300px !important;
+    height: 30px !important;
+    border: 1px solid var(--vermelho-natalino) !important;
+    border-radius: 5px !important;
+    transition: 2s !important;
 }
 input::placeholder{
-    color: var(--vermelho-natalino);
-    font-size: 1.2em;
+    color: var(--vermelho-natalino) !important;
+    font-size: 1.2em !important;
 }
 input:focus{
-    outline: none;
+    outline: none !important;
 }
 input:hover{
-    background-color: var(--vermelho-natalino);
-    color: var(--branco-neve);
+    background-color: var(--vermelho-natalino) !important;
+    color: var(--branco-neve) !important;
 }
-button{
-    width: 50px;
-    height: 30px;
-    border: 1px solid var(--vermelho-natalino);
-    border-radius: 5px;
-    transition: 2s;
-    outline: none;
-    background-color: var(--azul-noite);
-    color: var(--branco-neve);
-    cursor: pointer;
+#botaoEnviar{
+    width: 50px !important;
+    height: 30px !important;
+    border: 1px solid var(--vermelho-natalino) !important;
+    border-radius: 5px !important;
+    transition: 2s !important;
+    outline: none !important;
+    background-color: var(--branco-neve) !important;
+    color: var(--vermelho-natalino) !important;
+    cursor: pointer !important;
 }
-button:hover{
-    background-color: var(--vermelho-natalino);
-    color: var(--branco-neve);
+#botaoEnviar:hover{
+    background-color: var(--vermelho-natalino) !important;
+    color: var(--branco-neve) !important;
 }
-button:active{
-    background-color: var(--vermelho-natalino);
-    color: var(--branco-neve);
+#botaoEnviar:active{
+    background-color: var(--vermelho-natalino) !important;
+    color: var(--branco-neve) !important;
 }
-
 
 main{
     width: 100%;
@@ -118,24 +117,24 @@ main{
 }
 
 main h2{
-    font-family: var(--fonte-titulo);
-    font-size: var(--font-size-titulo);
-    color: var(--branco-neve);
-    text-align: center;
+    font-family: var(--fonte-titulo) !important;
+    font-size: var(--font-size-titulo) !important;
+    color: var(--branco-neve) !important;
+    text-align: center !important;
 }
 main p{
-    font-family: var(--fonte-padrao);
-    font-size: var(--font-size-padrao);
-    color: var(--branco-neve);
-    text-shadow: 2px 2px 2px var(--vermelho-natalino);
-    font-weight: 800;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: var(--fonte-padrao) !important;
+    font-size: var(--font-size-padrao) !important;
+    color: var(--branco-neve) !important;
+    text-shadow: 2px 2px 2px var(--) !important;
+    font-weight: 800 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 
 }
 #banner{
-    display: flex;
+    display: flex ;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -170,22 +169,22 @@ article{
     gap: 10px;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 80px;
     margin-bottom: 30px;
     padding: 15px;
     text-align: justify;
     background-color: var(--branco-neve);
 }
 article h2{
-    font-family: var(--fonte-titulo);
-    font-size: var(--font-size-titulo);
-    color: var(--branco-neve);
+    font-family: var(--fonte-titulo) !important;
+    font-size: var(--font-size-titulo) !important;
+    color: var(--dourado) !important;
 
 }
 article p{
-    font-family: var(--fonte-padrao);
-    font-size: var(--font-size-padrao);
-    color: var(--branco-neve);
+    font-family: var(--fonte-padrao) !important;
+    font-size: var(--font-size-padrao) !important;
+    color: var(--branco-neve) !important;
    
 }
 #hulkNatalino{
@@ -197,8 +196,9 @@ article p{
 .formularioArea{
     width: 80%;
     padding: 30px;
-    background-color: var(--branco-neve);
+    background-color: var(--vermelho-natalino);
     border-radius: 10px;
+    margin-top: 30px;
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
@@ -213,6 +213,12 @@ article p{
     width: 100%;
     transition: 3s;
 }
+.hulkNoelPlusVideo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 #papaiNoelImg{
     border-color: var(--azul-noite);
     animation: piscaLuz;
@@ -222,12 +228,14 @@ article p{
     height: 400px;
     border-radius: 50%; 
     cursor: pointer;
+    object-fit: cover;
 }
 #papaiNoelImg:hover{
     border: 10px solid;
    
 
 }
+
 .hulks{
     display: flex;
     justify-content: center;
@@ -254,14 +262,26 @@ form h3{
 form label{
     font-family: var(--fonte-padrao);
     font-size: var(--font-size-padrao);
-    color: var(--azul-noite);
+    color: var(--dourado);
+}
+.pModal{
+    font-family: var(--fonte-padrao) !important;
+    font-family: var(--fonte-padrao) !important;
+    color: #D32F2F !important;
+    text-align: left !important;
+    gap: 30px;
+}
+.imagemModal{
+    height: 100px;
+    width: 100px;
 }
 select{
-    width: 100%;
+    width: 300px;
     height: 30px;
     border: 1px solid var(--vermelho-natalino);
     border-radius: 5px;
     transition: 2s;
+    -webkit-appearance: none !important;
 }
 select:hover{
     background-color: var(--vermelho-natalino);
@@ -290,70 +310,66 @@ footer{
     color: var(--branco-neve);
     font-size: larger;
 }
-#videoInsert {
-    width: 600px;
-    height: 600px;
-    object-fit: cover;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-  }
-  
-  #videoInsert::-webkit-media-controls {
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-  }
-  
-  #videoInsert::-webkit-media-controls-play-button {
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-  }
-  
-  #videoInsert::-webkit-media-controls-pause-button {
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-  }
-  
-  #videoInsert::-webkit-media-controls-volume-slider {
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-  }
-@keyframes piscaLuz {
-    0%{
-        border-color: var(--azul-noite);
-    }
-    50%{
-        border-color: transparent;
-    }
-    100%{
-        border-color: var(--azul-noite);
-    }
+
+
+#botaoSenacModal{
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
 }
-@keyframes hulkGirando {
+.divIcons{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    width: 100% !important;
+    height: 100% !important;
+    flex-direction: column !important
+  ;
+}
+.senacIcon{
+    width:  200px !important;
+    height: 200px !important;
+    object-fit: fill !important;
+    border-radius: 50% !important;
+    animation: modalGirando 3s linear infinite;
+  
+    border: 8px solid;
+
+}
+
+
+@keyframes modalGirando {
     0%{
         transform: rotate(0deg);
-        border: 10px solid;
-        border-color: var(--dourado);
+        border-color: var(--azul-noite);
+        box-shadow: var(--azul-noite) 3px 3px 10px 3px;
+
+    }
+    25%{
+
+        border-color: var(--vermelho-natalino);
+        box-shadow: var(--vermelho-natalino) 3px 3px 10px 3px;
     }
     50%{
-        transform: rotate(180deg);
-        border: 10px solid;
-        border-color: var(--azul-noite);
+
+        border-color: var(--dourado);
+        box-shadow: var(--dourado) 3px 3px 10px 3px;
+
         
 
     }
+    75%{
+
+        border-color: var(--prata);
+        box-shadow: var(--prata) 3px 3px 10px 3px;
+    }
     100%{
-        transform: rotate(360deg);
-        border: 10px solid;
-        border-color: var(--dourado);
+/*         transform: rotate(360deg);
+ */        border-color: var(--azul-noite);
+        box-shadow: var(--azul-noite) 3px 3px 10px 3px;
+
     }
 }
 @media (max-width: 515px) {
