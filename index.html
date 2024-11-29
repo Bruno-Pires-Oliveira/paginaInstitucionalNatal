@@ -17,7 +17,7 @@
         <div class="inputSearch">
           <input type="search" placeholder="Buscar" />
         </div>
-        <img src="./assets/logoGenerica.png" alt="logo do senac" style="height: 100px;width: 100px;"/>
+        <img src="./assets/iconGorro.png" alt="logo do senac" style="height: 60px;width: 60px;"/>
       </header>
       <main>
         <div id="banner">
@@ -62,13 +62,13 @@
                     <div class="modal-body">
                     <div class="flex">
                       <div class="boneco">
-                       <p class="pModal">Você pode doar brinquedos!<img src="./assets/brinquedo.png" alt="Brinquedo do chama" class="imagemModal"></p>
+                       <p class="pModal">Doe brinquedos novos ou em bom estado!<img src="./assets/brinquedo.png" alt="Brinquedo do chama" class="imagemModal"></p>
                       </div>
                       <div class="roupas">
-                        <p class="pModal">Você pode doar roupas!<img src="./assets/roupas.png" alt="Roupas" class="imagemModal"></p>
+                        <p class="pModal">Doe roupas novas ou em bom estado!<img src="./assets/roupas.png" alt="Roupas" class="imagemModal"></p>
                       </div>
                       <div class="sapatos">
-                      <p class="pModal">Você pode doar sapatos!<img src="./assets/sapatos.png" alt="Sapatos" class="imagemModal"></p>
+                      <p class="pModal">Doe sapatos novos ou em bom estado!<img src="./assets/sapatos.png" alt="Sapatos" class="imagemModal"></p>
                       </div>
                     </div>
                     </div>
@@ -93,13 +93,13 @@
                     <div class="modal-body">
                     <div class="flex">
                       <div class="boneco">
-                       <p class="pModal">Você não pode doar brinquedos muito quebrados!<img src="./assets/brinquedoModalPlaca.webp" alt="Brinquedo quebrado em meio a nevasca" class="imagemModal" style="border-radius: 50%;"></p>
+                       <p class="pModal">Evite doar brinquedos muito quebrados!<img src="./assets/brinquedoModalPlaca.webp" alt="Brinquedo quebrado em meio a nevasca" class="imagemModal" style="border-radius: 50%;"></p>
                       </div>
                       <div class="roupas">
-                        <p class="pModal">Você não pode doar roupas rasgadas!<img src="./assets/roupaRasgada.webp" alt="Roupas" class="imagemModal" style="border-radius: 50%;"></p>
+                        <p class="pModal">Evite doar roupas rasgadas!<img src="./assets/roupaRasgada.webp" alt="Roupas" class="imagemModal" style="border-radius: 50%;"></p>
                       </div>
                       <div class="sapatos">
-                      <p class="pModal">Você não pode doar sapatos rasgados!<img src="./assets/sapatosRasgados.webp" alt="Sapatos" class="imagemModal" style="border-radius: 50%;"></p>
+                      <p class="pModal">Evite doar sapatos rasgados!<img src="./assets/sapatosRasgados.webp" alt="Sapatos" class="imagemModal" style="border-radius: 50%;"></p>
                       </div>
                     </div>
                     </div>
@@ -112,55 +112,67 @@
               </div>
             </div>
           </section>
-         
-
             <article>
               <h2>Como chegar ao Senac?</h2>
               <a href="https://www.senac.br" target="_blank" style="display: block; font-size: 32px; font-weight: 900;">https://www.senac.br/</a>
-         
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.20238335458!2d-48.52493692383077!3d-25.531634677497255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94db9a43ec6dfe71%3A0x958318e02dde88e6!2sSenac%20Paranagu%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1732667285017!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0; width: 50%; margin-bottom: 10px;border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </article>
         </div>
         <div style="width: 100%;display: flex;flex-direction: column;align-items: center;justify-content: center;">
-        <div class="formularioArea">
+          <h2>Formulário de Doação</h2>
+          <h3>Preencha os dados e o tipo de brinquedo que você irá doar</h3>
+          <div class="formularioArea">
+            
           <form id="formulario">
-            <h2>Formulário de Doação</h2>
-            <h3>Preencha os dados e o tipo de brinquedo que você irá doar</h3>
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome"  />
+            <input type="text" id="nome" name="nome"  class="inputForm"/>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email"  />
+            <input type="email" id="email" name="email"   class="inputForm"/>
             <label for="comentarios">Comentarios:</label>
             <textarea id="comentarios" name="comentarios"></textarea>
-            <label for="tipobrinquedo">Tipobrinquedo:</label>
+            <label for="tipobrinquedo">Tipo do brinquedo:</label>
             <input
               type="text"
               id="tipobrinquedo"
               name="tipobrinquedo"
               required
-            />
-            <label for="genero">Genero:</label>
+              class="inputForm" style="margin-top: 15px;margin-bottom: 15px;"/>
+            <label for="genero">Genero (Clique para mudar):</label>
             <select id="genero" name="genero">
               <option value="masculino">Masculino</option>
               <option value="feminino">Feminino</option>
+              <option value="outro">Outro</option>
             </select>
             <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" required />
+            <input type="tel" id="telefone" name="telefone" required  class="inputForm"/>
             <button type="submit" id="botaoEnviar">Enviar</button>
           </form>
           <div class="papaiNoelContainer">
-          <img src="./assets/papaiNoel.jpg" alt=""
-          id="papaiNoelImg">
-        </div>
-      </div>
+            <img src="./assets/papaiNoel.jpg" alt=""
+            id="papaiNoelImg">
+          </div>
+      </div> 
         </div>
      
       </main>
-      <footer>
-        <p>Todos os direitos reservados &copy; a Bruno Pires Oliveira, Gustavo Onório da Silva e Vinicius</p>
-         <img src="./assets/hulk.gif" alt="" style="height: 5px;width: 5px;">
+      <footer class="footer">
+        <div class="footer-content">
+          <p>Criado por Gustavo Onório da Silva, Bruno Pires Oliveira e Vínicius Kauan Santos Leão</p>
+          <div class="snowflakes" aria-hidden="true">
+            <div class="snowflake">❄️</div>
+            <div class="snowflake">❄️</div>
+            <div class="snowflake">❄️</div>
+            <div class="snowflake">❄️</div>
+            <div class="snowflake">❄️</div>
+            <div class="snowflake">❄️</div>
+            <div class="snowflake">❄️</div>
+            <div class="snowflake">❄️</div>
+            <div class="snowflake">❄️</div>
+            <div class="snowflake">❄️</div>
+            
+          </div>
+        </div>
       </footer>
-    </div>
     <script type="module" src="./js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
