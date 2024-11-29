@@ -264,7 +264,7 @@ form h3 {
 .inputForm {
   width: 620px !important;
   height: 50px !important;
-  border: 3px solid var(--dourado) !important;
+  border: 3px solid var(--branco-neve) !important;
   border-radius: 5px !important;
   transition: 2s !important;
 }
@@ -275,7 +275,7 @@ form h3 {
 form label {
   font-family: var(--fonte-padrao);
   font-size: var(--font-size-padrao);
-  color: var(--dourado);
+  color: var(--branco-neve);
 }
 .pModal {
   font-family: var(--fonte-padrao) !important;
