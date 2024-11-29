@@ -2,4 +2,4 @@
 
 ## Esse projeto foi desenvolvido por Bruno, Gustavo e Vinicius
 
-### Curso técnico de informática para internet SENAC-2024
+### Curso técnico de informática para internet SENAC-2024 UC-4

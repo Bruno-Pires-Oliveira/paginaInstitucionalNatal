@@ -3,12 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-@font-face {
-  font-family: "MerryChristmas";
-  src: url("../fonts/MerryChristmasFlake.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
+
 :root {
   --fonte-padrao: "Playfair-Display", Verdana, sans-serif;
   --fonte-titulo: "MerryChristmas", cursive;
@@ -21,6 +16,12 @@
   --prata: #c0c0c0;
   --font-size-padrao: 1.6em;
   --font-size-titulo: 3em;
+}
+@font-face {
+  font-family: "MerryChristmas";
+  src: url("../fonts/MerryChristmasFlake.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 body {
   background-color: var(--verde-floresta) !important;

@@ -17,15 +17,16 @@ function cadastrarUsuario(e) {
   e.preventDefault();
   const nome = document.getElementById("nome").value;
   const email = document.getElementById("email").value;
-  const comentarios = document.getElementById("comentarios").value;
+  let comentarios = document.getElementById("comentarios").value;
   const tipobrinquedo = document.getElementById("tipobrinquedo").value;
   const genero = document.getElementById("genero").value;
   const telefone = Number(document.getElementById("telefone").value);
-
+  if (comentarios == "hulk") {
+    return secretHulk();
+  }
   if (
     nome == "" ||
     email == "" ||
-    comentarios == "" ||
     tipobrinquedo == "" ||
     genero == "" ||
     telefone == ""
@@ -41,7 +42,9 @@ function cadastrarUsuario(e) {
       genero,
       telefone
     );
+    console.log(dataUser);
     alert("Dados Cadastrados");
+    document.getElementById("formulario").reset();
     return santaClausLaughingOnSend();
   }
 }
@@ -92,3 +95,16 @@ function jingleBells() {
   audio.volume = 0.1;
 }
 
+function secretHulk() {
+  alert("AQUI ESTÁ");
+  const hulkInTheDivIcon = document.getElementsByClassName("iconDivs");
+  const hulkGif = document.createElement("img");
+  hulkGif.src = "./assets/hulk.gif";
+  hulkGif.style.width = "100%";
+  hulkGif.style.height = "100%";
+  hulkGif.style.position = "absolute";
+  hulkGif.style.top = "0";
+  hulkGif.style.left = "0";
+  hulkGif.style.zIndex = "100";
+  hulkInTheDivIcon[0].appendChild(hulkGif);
+}

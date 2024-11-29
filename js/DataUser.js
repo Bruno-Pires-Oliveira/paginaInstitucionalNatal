@@ -4,7 +4,7 @@ class DataUser {
     this.dataUser = [];
   }
   cadastrarUsuario(nome, email, comentario, tipobrinquedo, genero, telefone) {
-    const cadastrarusuario = new Formulario(
+    const cadastrarUsuario = new Formulario(
       nome,
       email,
       comentario,
@@ -12,7 +12,7 @@ class DataUser {
       genero,
       telefone
     );
-    this.dataUser.push(cadastrarusuario);
+    this.dataUser.push(cadastrarUsuario);
   }
 }
 export { DataUser };
